@@ -12,7 +12,7 @@ class Application
           i.name = item_request
         end
         resp.write "#{item.price}"
-        binding.pry
+
       else
         resp.write "Item not found"
         resp.status = 400
