@@ -11,7 +11,7 @@ class Application
         if item = @@items.find do |i|
           i.name = item_request
         end
-        resp.write item.price
+        resp.write "#{item.price}"
         binding.pry
       else
         resp.write "Item not found"
